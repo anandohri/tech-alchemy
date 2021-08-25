@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.pomoco{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.SideBar{
+  flex: 15%;
+  max-width: 15%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;  
+}
+
+.Main{
+  flex: 75%;
+  max-width: 75%;
+  background-color: white;
+  padding: 20px;
+}
+
+.NavBar{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Category{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.allRestaurants{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Restaurants{
+  padding: 20px;
+  flex: 29.3%;
+  max-width: 29.3%;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.RestaurantImage{
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+.Restaurant{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.RestaurantName{
+  flex: 70%;
+  max-width: 70%;
+}
+
+.Open{
+  flex: 29.9%;
+  max-width: 29.9%;
+  background-color: rgb(161, 255, 255);
+  color: blue;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 6px;
+  font-size: 14px
+}
+
+.Closed{
+  flex: 29.9%;
+  max-width: 29.9%;
+  background-color: rgb(247, 188, 188);
+  color: red;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 6px;
+  font-size: 14px
+}
+
+.Categories{
+  flex: 150px;
+  max-width: 150px;
+  margin: 5px;
+}
+
+.CategoryImage{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.CategoryName{
+  flex: 80%;
+  max-width: 80%;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.Specific{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.SpecificLeft{
+  flex: 49%;
+  max-width: 49%;
+  padding-left: 10px;
+}
+
+.SpecificRight{
+  flex: 49%;
+  max-width: 49%;
+  margin-left: 10px;
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+}
+
+.ItemCost{
+  flex: 29.9%;
+  max-width: 29.9%;
+  color: blue;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 14px
+}
+
+.MenuCard{
+  padding: 10px;
+}
+
+.active{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  backdrop-filter: blur(3px);
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.overlay{
+  width: 30%;
+  height: 100%;
+  margin-left: 70%;
+  padding: 1px;
+  padding-left: 30px;
+  background-color: white;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.logo{
+  border-radius: 8px;
+  vertical-align: top;
+}
+
+.SideBarOptionsSelected{
+  background-color: darkblue;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-width: 0px;
+}
+
+.SideBarOptionsUnselected{
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  color: grey;
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-width: 0px;
+}
+
+.NavBarLeft{
+  padding: 20px;
+  flex: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  margin: 2px;
+  margin-right: auto;
+  border-width: 0px;
+  border-radius: 10px;
+  background-image: url('images/60789.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  cursor: pointer;
+}
+
+.NavBarRightCart{
+  padding: 20px;
+  flex: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  margin: 2px;
+  margin-left: 10px;
+  border-width: 0px;
+  border-radius: 10px;
+  background-image: url('images/45-456372_cart-png-pic-shopping-cart-icon-png-white.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  cursor: pointer;
+}
+
+.NavBarRightFilter{
+  padding: 20px;
+  flex: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  margin: 2px;
+  margin-left: 10px;
+  border-width: 0px;
+  border-radius: 10px;
+  background-image: url('images/357-3574621_passive-check-shadow-filter-icon-transparent-png.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  cursor: pointer;
+}
+
+.SearchBar{
+  background-image: url('images/search_icon_153438.png');
+  background-position-y: 8px;
+  background-size: 40px 40px;
+  text-indent: 30px;
+  background-repeat: no-repeat;
+  background-color: rgba(211,211,211);
+  width: 350px;
+  border-width: 0px;
+  border-radius: 10px;
+}
+
+.closeFilter{
+  font-size: 18px;
+  border-width: 0px;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.overlay h2{
+  width: 80%;
+  display: inline-block;
+}
+
+.overlay p{
+  width: 80%;
+  display: inline-block;
+  font-size: 18px;
+  color: darkorange;
+}
+
+.Filter{
+  flex: 150px;
+  max-width: 150px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.SortbyImage{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  vertical-align: middle;
+  background-image: url('images/2aecb93a75d08bbebec5800b1cfa59a3.jpg');
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-color: rgba(211,211,211);
+  display: inline-block;
+}
+
+.SortbyName{
+  color: darkorange;
+  flex: 80%;
+  max-width: 80%;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.Cuisine{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;  
+}
+
+.Cuisines{
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: auto;
+  max-width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.5);
+  height: 25px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.AllCuisines{
+  padding: 5px;
+  font-weight: bold;
+  color: darkorange;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: auto;
+  max-width: 120px;
+  text-align: center;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 10px;
+  height: 25px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.SeeMore{
+  font-size: 18px;
+  border-width: 0px;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-left: auto;
+  background-color: white;
+  font-weight: bold;
+  color: rgb(211, 211, 211);
+}
+
+.email{
+  align-self: flex-end;
+  background-color: red;
+  padding: 5px;
+  border-radius: 10px;
+  color: grey;
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-width: 0px;
+}
